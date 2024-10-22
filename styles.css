@@ -1,0 +1,150 @@
+
+
+@media (min-width: 1024px){
+    .container{
+        display:grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 200px auto;
+        gap: 3rem;
+        grid-template-areas: 
+        "header header header"
+        "sidebar main main "
+        "footer footer footer"
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        font-size: 5px;
+        display:grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        font-size: 5px;
+        display:grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: 200px auto;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+    }
+}
+
+
+div {
+    text-align: center;
+}
+
+.header {
+    grid-area: header ;
+    display: flex;
+    border-radius: 10px;
+    border-color: black;
+    background-color: lightblue;
+    position: fixed;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar{
+    background-color: lightgray;
+    display: flex;
+    grid-area: sidebar;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 50px;
+    justify-content: center;
+    font-size: larger;
+}
+
+.main-content{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+    flex-shrink: 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.summary{
+    font-size: large;
+}
+
+.education-table{
+    border-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-table{
+    border-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: lightgray;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px;
+    align-content: center;
+}
+
+.skills-general{
+    border-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    align-content: center;
+}
+
+.effect:hover{
+    transform: scale(2.0);
+}
+
+.projects-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    background-color: lightgray;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
